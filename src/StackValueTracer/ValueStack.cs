@@ -218,14 +218,6 @@ public static class ValueStack
             }
         }
 
-        if (frame.Arguments.Count > 0)
-        {
-            builder.Append("        Vars: { ")
-                   .Append(string.Join(", ", frame.Arguments.Select(arg => $"{arg.Name}={arg.Display}")))
-                   .Append(" }")
-                   .AppendLine();
-        }
-
         builder.AppendLine();
     }
 
